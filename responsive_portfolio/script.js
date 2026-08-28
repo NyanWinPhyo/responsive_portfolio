@@ -15,7 +15,6 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("main section[id]");
 
 const revealElements = document.querySelectorAll(".reveal");
-const skillProgressBars = document.querySelectorAll(".skill-progress");
 
 const filterButtons = document.querySelectorAll(".filter-button");
 const projectCards = document.querySelectorAll(".project-card");
@@ -221,33 +220,6 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
-
-/* =========================
-   SKILL BAR ANIMATION
-========================= */
-
-const skillObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        skillProgressBars.forEach((bar) => {
-          bar.style.width = bar.dataset.width;
-        });
-
-        skillObserver.disconnect();
-      }
-    });
-  },
-  {
-    threshold: 0.35
-  }
-);
-
-const skillsSection = document.getElementById("skills");
-
-if (skillsSection) {
-  skillObserver.observe(skillsSection);
-}
 
 /* =========================
    PROJECT FILTER

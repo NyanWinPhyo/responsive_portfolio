@@ -714,47 +714,6 @@ img {
   );
 }
 
-.skill-list {
-  display: grid;
-  gap: 24px;
-}
-
-.skill-name {
-  display: flex;
-  justify-content: space-between;
-
-  margin-bottom: 8px;
-
-  font-size: 0.93rem;
-  font-weight: 700;
-}
-
-.skill-name span:last-child {
-  color: var(--text-secondary);
-}
-
-.skill-bar {
-  height: 9px;
-  border-radius: 50px;
-
-  background: var(--surface-secondary);
-  overflow: hidden;
-}
-
-.skill-progress {
-  width: 0;
-  height: 100%;
-  border-radius: inherit;
-
-  background: linear-gradient(
-    90deg,
-    var(--primary),
-    var(--accent)
-  );
-
-  transition: width 1.2s ease;
-}
-
 .tag-list {
   display: flex;
   flex-wrap: wrap;
