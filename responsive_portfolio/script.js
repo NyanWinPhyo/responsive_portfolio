@@ -236,11 +236,11 @@ filterButtons.forEach((button) => {
     const selectedFilter = button.dataset.filter;
 
     projectCards.forEach((card) => {
-      const projectCategory = card.dataset.category;
+      const projectCategories = card.dataset.category.split(" ");
 
       if (
         selectedFilter === "all" ||
-        projectCategory === selectedFilter
+        projectCategories.includes(selectedFilter)
       ) {
         card.classList.remove("hidden");
       } else {

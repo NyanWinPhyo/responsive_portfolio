@@ -312,9 +312,23 @@
               <span>Visual Studio</span>
               <span>VS Code</span>
               <span>Git / GitHub</span>
-              <span>Linux</span>
               <span>Draw.io</span>
               <span>SQL Server</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>Systems & Networking</h3>
+            </div>
+
+            <div class="tag-list">
+              <span>Networking Fundamentals</span>
+              <span>Cisco Packet Tracer</span>
+              <span>Linux</span>
+              <span>VMware</span>
+              <span>WSL</span>
             </div>
           </article>
         </div>
@@ -328,65 +342,82 @@
           <p class="section-label">FEATURED WORK</p>
           <h2>Projects I have worked on.</h2>
           <p>
-            A collection of engineering, software, automation, and academic
-            projects.
+            Selected software, automation, embedded systems, cybersecurity,
+            and engineering projects that reflect the areas I actively work in.
           </p>
         </div>
 
         <div class="project-filters reveal">
-          <button class="filter-button active" data-filter="all">
-            All
-          </button>
-
-          <button class="filter-button" data-filter="automation">
-            Automation
-          </button>
-
-          <button class="filter-button" data-filter="software">
-            Software
-          </button>
-
-          <button class="filter-button" data-filter="design">
-            Design
-          </button>
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="software">Software</button>
+          <button class="filter-button" data-filter="automation">Automation</button>
+          <button class="filter-button" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="filter-button" data-filter="engineering">Engineering</button>
+          <button class="filter-button" data-filter="other">Other</button>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal" data-category="automation">
+          <!-- Smart Warehouse Sorting System -->
+          <article class="project-card reveal" data-category="automation engineering">
             <div class="project-image warehouse-project">
               <i class="fa-solid fa-boxes-stacked"></i>
-
-              <span class="project-category">
-                Automation
-              </span>
+              <span class="project-category">Mechatronics / Automation</span>
             </div>
 
             <div class="project-content">
               <h3>Smart Automated Warehouse Sorting System</h3>
-
               <p>
-                An automated conveyor sorting prototype using barcode
-                detection, ultrasonic sensors, IR sensors, and servo-driven
-                diverters.
+                A physical conveyor-based sorting prototype that identifies items
+                using barcodes and sensor inputs, then routes them using servo-driven
+                sorting gates controlled by an Arduino Mega.
               </p>
 
               <div class="project-tags">
                 <span>Arduino Mega</span>
                 <span>Barcode Scanner</span>
+                <span>IR / Ultrasonic Sensors</span>
                 <span>Servo Motors</span>
+                <span>Prototyping</span>
               </div>
 
               <div class="project-links">
-                <a href="projects/dineflow.html">
-                  View Details
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <span class="project-status">Case study coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DineFlow -->
+          <article class="project-card reveal" data-category="software">
+            <div class="project-image software-project">
+              <i class="fa-solid fa-utensils"></i>
+              <span class="project-category">Full-Stack Software</span>
+            </div>
+
+            <div class="project-content">
+              <h3>DineFlow Restaurant Management System</h3>
+              <p>
+                A restaurant management platform being developed with ASP.NET Core MVC
+                and C#, with role-based administration, user management, restaurant
+                operations, and database-backed workflows.
+              </p>
+
+              <div class="project-tags">
+                <span>ASP.NET Core MVC</span>
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>HTML / CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <span class="project-status">Case study coming soon</span>
 
                 <a
                   href="https://github.com/NyanWinPhyo/DineFlow-Restaurant-System"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="DineFlow GitHub repository"
+                  title="View DineFlow on GitHub"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
@@ -394,111 +425,156 @@
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="software">
-            <div class="project-image software-project">
-              <i class="fa-solid fa-utensils"></i>
-
-              <span class="project-category">
-                Software
-              </span>
-            </div>
-
-            <div class="project-content">
-              <h3>DineFlow Restaurant Management System</h3>
-
-              <p>
-                A C# Windows Forms application featuring user management,
-                order tracking, reports, feedback, and database integration.
-              </p>
-
-              <div class="project-tags">
-                <span>C#</span>
-                <span>WinForms</span>
-                <span>SQL</span>
-              </div>
-
-              <div class="project-links">
-                <a href="#">
-                  View Details
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-                <a href="#" aria-label="Project source code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="automation">
+          <!-- PLC Car Wash -->
+          <article class="project-card reveal" data-category="automation engineering">
             <div class="project-image plc-project">
               <i class="fa-solid fa-car-side"></i>
-
-              <span class="project-category">
-                PLC
-              </span>
+              <span class="project-category">Industrial Automation</span>
             </div>
 
             <div class="project-content">
-              <h3>Automatic Car Wash System</h3>
-
+              <h3>PLC &amp; Pneumatic Automated Car Wash</h3>
               <p>
-                A PLC and pneumatic automation project controlling entry,
-                washing, side cleaning, top cleaning, and drying stages.
+                A simulated industrial automation system using PLC logic and pneumatic
+                actuators to coordinate sequential washing stages, timers, Start/Stop
+                controls, and emergency-stop behaviour.
               </p>
 
               <div class="project-tags">
                 <span>PLC</span>
                 <span>Pneumatics</span>
                 <span>Automation Studio</span>
+                <span>Sequential Logic</span>
+                <span>Safety Controls</span>
               </div>
 
               <div class="project-links">
-                <a href="#">
-                  View Details
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-                <a href="#" aria-label="Project source code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
+                <span class="project-status">Case study coming soon</span>
               </div>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="design">
-            <div class="project-image cad-project">
-              <i class="fa-solid fa-cubes"></i>
+          <!-- Digital Forensics -->
+          <article class="project-card reveal" data-category="cybersecurity software">
+            <div class="project-image forensic-project">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span class="project-category">Cybersecurity</span>
+            </div>
+
+            <div class="project-content">
+              <h3>Windows Digital Forensic Investigation</h3>
+              <p>
+                A forensic investigation of a compromised Windows virtual machine,
+                involving memory and disk acquisition, evidence examination, analysis,
+                and technical reporting in an isolated environment.
+              </p>
+
+              <div class="project-tags">
+                <span>Windows</span>
+                <span>Virtual Machine</span>
+                <span>Memory Forensics</span>
+                <span>Disk Analysis</span>
+              </div>
+
+              <div class="project-links">
+                <span class="project-status">Case study coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lumiouse City Guide -->
+          <article class="project-card reveal" data-category="software">
+            <div class="project-image lumiouse-project">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span class="project-category">In Development</span>
+            </div>
+
+            <div class="project-content">
+              <h3>Lumiouse City Guide</h3>
+              <p>
+                A new city-guide project currently in early development. Its full
+                feature set, technical architecture, and project case study will be
+                documented here as the project takes shape.
+              </p>
+
+              <div class="project-tags">
+                <span>New Project</span>
+                <span>In Development</span>
+              </div>
+
+              <div class="project-links">
+                <span class="project-status project-status-live">Currently building</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Other Technical Work -->
+          <article class="project-card reveal" data-category="other">
+            <div class="project-image other-project">
+              <i class="fa-solid fa-layer-group"></i>
 
               <span class="project-category">
-                CAD
+                Other Technical Work
               </span>
             </div>
 
             <div class="project-content">
-              <h3>SolidWorks Milling Project</h3>
+              <h3>Additional Technical Experience</h3>
 
               <p>
-                A CAD and CAM project involving component modelling,
-                machining toolpaths, pockets, holes, chamfers, and milling
-                operations.
+                Smaller academic projects, technical exercises, and technologies
+                explored alongside my main engineering and software projects.
               </p>
 
-              <div class="project-tags">
-                <span>SolidWorks</span>
-                <span>CAM</span>
-                <span>CNC</span>
+              <div class="additional-work-list">
+
+                <div class="additional-work-item">
+                  <i class="fa-solid fa-microchip"></i>
+
+                  <div>
+                    <h4>Assembly Programming</h4>
+                    <p>
+                      Worked with NASM on Linux to explore registers,
+                      system calls, low-level program structure, and
+                      procedural shape generation.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-work-item">
+                  <i class="fa-solid fa-diagram-project"></i>
+
+                  <div>
+                    <h4>Engineering Planning</h4>
+                    <p>
+                      Developed a sports and recreation centre proposal
+                      involving facility planning, scheduling, cost
+                      considerations, risk analysis, CPM, and Gantt charts.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-work-item">
+                  <i class="fa-solid fa-network-wired"></i>
+
+                  <div>
+                    <h4>Networking Fundamentals</h4>
+                    <p>
+                      Gained introductory experience with network topology,
+                      basic network configuration, and simulation using
+                      Cisco Packet Tracer.
+                    </p>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="project-links">
-                <a href="#">
-                  View Details
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-                <a href="#" aria-label="Project source code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
+              <div class="project-tags">
+                <span>NASM</span>
+                <span>Linux</span>
+                <span>Packet Tracer</span>
+                <span>Networking</span>
+                <span>Project Planning</span>
               </div>
             </div>
           </article>
@@ -587,7 +663,7 @@
 
               <div>
                 <span>Email</span>
-                <strong>nwphyo.05@gmail.com.com</strong>
+                <strong>nwphyo.05@gmail.com</strong>
               </div>
             </a>
 
