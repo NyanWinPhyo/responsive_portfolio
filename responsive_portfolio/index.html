@@ -83,9 +83,10 @@
           </h2>
 
           <p class="hero-description">
-            A Mechatronics Engineering student interested in automation,
-            robotics, embedded systems, software development, and intelligent
-            engineering solutions.
+            A Mechatronics Engineering student and engineering intern working
+            across automation, embedded systems, and software development.
+            I enjoy building projects that connect physical systems with
+            practical software solutions.
           </p>
 
           <div class="hero-buttons">
@@ -146,7 +147,7 @@
             <div class="profile-info">
               <div>
                 <span>Focus</span>
-                <strong>Automation & Software</strong>
+                <strong>Engineering & Software</strong>
               </div>
 
               <div>
@@ -156,7 +157,7 @@
 
               <div>
                 <span>Status</span>
-                <strong>Engineering Student</strong>
+                <strong>Student & Engineering Intern</strong>
               </div>
             </div>
           </div>
@@ -176,8 +177,9 @@
           <p class="section-label">ABOUT ME</p>
           <h2>Engineering ideas into reality.</h2>
           <p>
-            I enjoy combining mechanical systems, electronics, programming,
-            and automation to build practical solutions.
+            My work sits at the intersection of engineering and software,
+            from physical automation prototypes to full-stack applications
+            and data-driven web tools.
           </p>
         </div>
 
@@ -186,21 +188,24 @@
             <h3>Who am I?</h3>
 
             <p>
-              I am a Mechatronics Engineering student with experience in
-              Arduino systems, PLC programming, pneumatic automation,
-              C# applications, MATLAB, CAD, and web development.
+              I am a Mechatronics Engineering student with hands-on experience
+              in embedded systems, PLC and pneumatic automation, electronics,
+              mechanical prototyping, and software development.
             </p>
 
             <p>
-              My projects often combine hardware and software, from automated
-              warehouse sorting systems to control simulations and database
-              applications.
+              My projects range from a physical automated warehouse sorting
+              prototype and industrial control simulations to full-stack web
+              applications and interactive software tools. I enjoy understanding
+              how each part of a system works and then bringing those parts
+              together into a working solution.
             </p>
 
             <p>
-              I am currently developing my skills in software engineering,
-              robotics, embedded systems, cybersecurity, and intelligent
-              automation.
+              I am continuing to develop my skills in software engineering,
+              robotics, embedded systems, automation, networking, and
+              cybersecurity while gaining industry experience in engineering
+              and radio communication systems.
             </p>
 
             <a
@@ -237,8 +242,8 @@
               <i class="fa-solid fa-code"></i>
               <h3>Software</h3>
               <p>
-                C#, Python, JavaScript, HTML, CSS, databases, and application
-                development.
+                C#, Python, JavaScript, TypeScript, web development,
+                databases, and application architecture.
               </p>
             </article>
 
@@ -246,8 +251,8 @@
               <i class="fa-solid fa-cube"></i>
               <h3>Design</h3>
               <p>
-                SolidWorks, mechanical modelling, prototyping, and technical
-                diagrams.
+                CAD modelling, mechanical prototyping, system diagrams,
+                technical documentation, and engineering design.
               </p>
             </article>
           </div>
@@ -532,7 +537,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
-</div>
+              </div>
           </article>
           
           <!-- Other Technical Work -->
@@ -705,14 +710,22 @@
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contactForm">
+        <form
+          class="contact-form reveal"
+          id="contactForm"
+          action="https://formspree.io/f/myezyqzn"
+          method="POST"
+        >
+          
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 placeholder="Your name"
+                autocomplete="name"
                 required
               >
             </div>
@@ -722,7 +735,9 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="your@email.com"
+                autocomplete="email"
                 required
               >
             </div>
@@ -733,6 +748,7 @@
             <input
               type="text"
               id="subject"
+              name="subject"
               placeholder="What would you like to discuss?"
               required
             >
@@ -742,6 +758,7 @@
             <label for="message">Message</label>
             <textarea
               id="message"
+              name="message"
               rows="6"
               placeholder="Write your message here..."
               required

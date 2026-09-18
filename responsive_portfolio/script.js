@@ -254,31 +254,51 @@ filterButtons.forEach((button) => {
    CONTACT FORM
 ========================= */
 
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const subject = document.getElementById("subject").value.trim();
-  const message = document.getElementById("message").value.trim();
+  const submitButton = contactForm.querySelector(
+    'button[type="submit"]'
+  );
 
-  if (!name || !email || !subject || !message) {
-    formMessage.textContent = "Please complete all fields.";
-    return;
+  const originalButtonText = submitButton.innerHTML;
+
+  submitButton.disabled = true;
+  submitButton.innerHTML =
+    'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+  formMessage.textContent = "";
+
+  try {
+    const formData = new FormData(contactForm);
+
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      formMessage.textContent =
+        "Thanks! Your message has been sent successfully.";
+
+      formMessage.classList.remove("form-error");
+      formMessage.classList.add("form-success");
+
+      contactForm.reset();
+    } else {
+      throw new Error("Form submission failed.");
+    }
+  } catch (error) {
+    formMessage.textContent =
+      "Something went wrong. Please try again or contact me by email.";
+
+    formMessage.classList.remove("form-success");
+    formMessage.classList.add("form-error");
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonText;
   }
-
-  formMessage.textContent =
-    `Thanks, ${name}. Your message form is working locally.`;
-
-  contactForm.reset();
-
-  /*
-    This form currently does not send an actual email.
-
-    Later, you can connect it to:
-    - Formspree
-    - EmailJS
-    - Netlify Forms
-    - Your own backend
-  */
 });

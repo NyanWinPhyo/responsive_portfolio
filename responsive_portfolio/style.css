@@ -897,7 +897,7 @@ img {
   display: flex;
   flex-direction: column;
 
-  height: 590px;
+  height: 635px;
 
   border-radius: 21px;
 
@@ -1217,6 +1217,20 @@ img {
 
   color: var(--primary);
   font-weight: 650;
+}
+
+.form-success {
+  color: #16a34a;
+}
+
+.form-error {
+  color: #dc2626;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
 }
 
 /* =========================
