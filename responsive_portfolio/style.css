@@ -896,7 +896,8 @@ img {
 .project-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
+  height: 590px;
 
   border-radius: 21px;
 
@@ -915,6 +916,8 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  min-height: 0;
 
   padding: 26px;
 }
@@ -967,7 +970,7 @@ img {
   display: grid;
   gap: 14px;
 
-  max-height: 280px;
+  max-height: 180px;
   overflow-y: auto;
 
   margin: 20px 0 24px;
@@ -1363,6 +1366,10 @@ img {
   .projects-grid,
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    height: auto;
   }
 
   .additional-work-list {
