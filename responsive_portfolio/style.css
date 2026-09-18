@@ -849,8 +849,8 @@ img {
   background: linear-gradient(145deg, #ea580c, #eab308);
 }
 
-.forensic-project {
-  background: linear-gradient(145deg, #334155, #0f766e);
+.control-project {
+  background: linear-gradient(145deg, #0f766e, #2563eb);
 }
 
 .pokemon-project {
@@ -928,6 +928,8 @@ img {
 }
 
 .project-content > p {
+  min-height: 104px;
+
   margin-bottom: 20px;
   color: var(--text-secondary);
 }
@@ -935,9 +937,47 @@ img {
 .project-tags {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 8px;
 
+  min-height: 78px;
   margin-bottom: 24px;
+}
+
+/* Keep major project card content vertically aligned */
+.project-card:not([data-category="other"]) .project-content > p {
+  min-height: 104px;
+}
+
+.project-card:not([data-category="other"]) .project-tags {
+  min-height: 78px;
+  align-content: flex-start;
+}
+
+.project-footer {
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 92px;
+}
+
+.project-status {
+  display: flex;
+  align-items: center;
+
+  min-height: 24px;
+  margin: 0 0 14px;
+
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.project-status-live {
+  color: var(--primary);
 }
 
 .project-links {
@@ -945,32 +985,27 @@ img {
   align-items: center;
   justify-content: space-between;
 
-  margin-top: auto;
+  min-height: 42px;
+  margin-top: 0;
 
   padding-top: 18px;
   border-top: 1px solid var(--border);
 }
 
 .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
   color: var(--primary);
   font-weight: 750;
-}
-
-.project-status {
-  color: var(--text-secondary);
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-
-.project-status-live {
-  color: var(--primary);
 }
 
 .additional-work-list {
   display: grid;
   gap: 14px;
 
-  max-height: 180px;
+  max-height: 245px;
   overflow-y: auto;
 
   margin: 20px 0 24px;
@@ -990,6 +1025,11 @@ img {
 .additional-work-list::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 20px;
+}
+
+.project-card[data-category="other"] .project-tags {
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .additional-work-item {
@@ -1407,6 +1447,11 @@ img {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .project-card:not([data-category="other"]) .project-content > p,
+  .project-card:not([data-category="other"]) .project-tags {
+    min-height: 0;
   }
 }
 
