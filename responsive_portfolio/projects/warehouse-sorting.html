@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Smart Automated Warehouse Sorting System project by Nyan Win Phyo."
+  >
+
+  <title>
+    Smart Automated Warehouse Sorting System | Nyan Win Phyo
+  </title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../project-style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+</head>
+
+<body class="project-page">
+
+  <!-- Header -->
+  <header class="project-header">
+    <nav class="project-navbar container">
+
+      <a href="../index.html" class="logo">
+        NWP<span>.</span>
+      </a>
+
+      <div class="project-nav-actions">
+
+        <a
+          href="../index.html#projects"
+          class="project-back-link"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Projects</span>
+        </a>
+
+        <button
+          class="theme-button"
+          id="projectThemeButton"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="project-hero">
+
+      <div class="container">
+
+        <div class="project-breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="../index.html#projects">Projects</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Warehouse Sorting</span>
+        </div>
+
+        <div class="project-hero-grid">
+
+          <div>
+
+            <p class="project-eyebrow">
+              MECHATRONICS • EMBEDDED SYSTEMS • AUTOMATION
+            </p>
+
+            <h1>
+              Smart Automated Warehouse Sorting System
+            </h1>
+
+            <p class="project-lead">
+              A physical conveyor-based prototype designed to identify
+              incoming items using barcode and sensor data, process the
+              information using an Arduino Mega, and automatically route
+              packages using servo-driven sorting mechanisms.
+            </p>
+
+            <div class="project-actions">
+
+              <a
+                href="#overview"
+                class="button primary-button"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+
+              <a
+                href="../index.html#contact"
+                class="button secondary-button"
+              >
+                Contact Me
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-hero-visual project-photo-hero">
+            <img
+              src="../images/warehouse/warehouse-main.jpg"
+              alt="Smart automated warehouse sorting system prototype with conveyor, Arduino Mega, sensors and control electronics"
+            >
+
+            <span class="project-hero-badge">
+              Diploma Final Year Project
+            </span>
+          </div>
+
+        </div>
+
+        <div class="project-meta">
+
+          <div class="project-meta-card">
+            <span>Status</span>
+            <strong>Completed</strong>
+          </div>
+
+          <div class="project-meta-card">
+            <span>Project Type</span>
+            <strong>Final Year Project</strong>
+          </div>
+
+          <div class="project-meta-card">
+            <span>Role</span>
+            <strong>Design & Implementation</strong>
+          </div>
+
+          <div class="project-meta-card">
+            <span>Platform</span>
+            <strong>Arduino Mega 2560</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Main content -->
+    <section class="project-body">
+
+      <div class="container project-layout">
+
+        <div class="project-main">
+
+          <!-- Overview -->
+          <section
+            class="project-section"
+            id="overview"
+          >
+
+            <p class="project-section-label">
+              01 • OVERVIEW
+            </p>
+
+            <h2>
+              Building a physical automated sorting prototype.
+            </h2>
+
+            <p>
+              The goal of this project was to develop a prototype warehouse
+              sorting system capable of identifying packages and directing
+              them toward predefined destinations without requiring manual
+              sorting at each stage.
+            </p>
+
+            <p>
+              The project combined mechanical construction, embedded
+              programming, sensors, barcode communication, servo actuation,
+              conveyor control, and power distribution into a single
+              integrated prototype.
+            </p>
+
+          </section>
+
+          <!-- Objective -->
+          <section
+            class="project-section"
+            id="objective"
+          >
+
+            <p class="project-section-label">
+              02 • OBJECTIVE
+            </p>
+
+            <h2>
+              The problem I wanted to solve.
+            </h2>
+
+            <p>
+              Manual sorting becomes increasingly inefficient as the number
+              of packages and destinations increases. The prototype explored
+              how package identification and automated routing could be
+              combined into a small-scale warehouse system.
+            </p>
+
+            <p>
+              Instead of treating sensing, identification, mechanical
+              movement, and control as separate tasks, the project required
+              all of them to operate as one coordinated system.
+            </p>
+
+          </section>
+
+          <!-- Workflow -->
+          <section
+            class="project-section"
+            id="workflow"
+          >
+
+            <p class="project-section-label">
+              03 • SYSTEM WORKFLOW
+            </p>
+
+            <h2>
+              How the system works.
+            </h2>
+
+            <div class="workflow">
+
+              <div class="workflow-step">
+
+                <div class="workflow-number">01</div>
+
+                <div>
+                  <h3>Item enters the conveyor</h3>
+                  <p>
+                    The package is introduced into the sorting line and
+                    transported toward the sensing and identification area.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="workflow-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <div class="workflow-step">
+
+                <div class="workflow-number">02</div>
+
+                <div>
+                  <h3>Package detection</h3>
+                  <p>
+                    Sensor inputs are used to detect the presence and
+                    position of an incoming package.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="workflow-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <div class="workflow-step">
+
+                <div class="workflow-number">03</div>
+
+                <div>
+                  <h3>Barcode identification</h3>
+                  <p>
+                    A GM65 barcode scanner reads the barcode associated
+                    with the package and sends the identification data
+                    to the controller.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="workflow-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <div class="workflow-step">
+
+                <div class="workflow-number">04</div>
+
+                <div>
+                  <h3>Arduino processing</h3>
+                  <p>
+                    The Arduino Mega processes the barcode and sensor
+                    information and determines the required destination.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="workflow-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <div class="workflow-step">
+
+                <div class="workflow-number">05</div>
+
+                <div>
+                  <h3>Servo sorting decision</h3>
+                  <p>
+                    The appropriate servo-driven gate is activated to
+                    redirect the package toward its assigned route.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- Implementation -->
+          <section
+            class="project-section"
+            id="implementation"
+          >
+
+            <p class="project-section-label">
+              04 • IMPLEMENTATION
+            </p>
+
+            <h2>
+              Hardware and system integration.
+            </h2>
+
+            <div class="technical-grid">
+
+              <article class="technical-card">
+                <i class="fa-solid fa-microchip"></i>
+
+                <h3>Arduino Mega 2560</h3>
+
+                <p>
+                  Used as the main controller for sensor readings,
+                  barcode processing, system logic, and servo commands.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-barcode"></i>
+
+                <h3>GM65 Barcode Scanner</h3>
+
+                <p>
+                  Provided item identification data used by the controller
+                  to determine the required sorting destination.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-satellite-dish"></i>
+
+                <h3>IR & Ultrasonic Sensors</h3>
+
+                <p>
+                  Used for package detection, positioning, and supporting
+                  the timing of automated sorting operations.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-gears"></i>
+
+                <h3>Servo Actuation</h3>
+
+                <p>
+                  MG996-class servo motors drove the mechanical sorting
+                  gates used to redirect packages.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+
+                <h3>Conveyor System</h3>
+
+                <p>
+                  The conveyor transported items between detection,
+                  identification, and sorting stages.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>Power Distribution</h3>
+
+                <p>
+                  A custom prototype power arrangement and step-down
+                  converters were used to provide appropriate supply
+                  levels to the different components.
+                </p>
+              </article>
+            </div>
+
+            <div class="project-photo-grid">
+
+              <figure class="project-photo-card">
+                <img
+                  src="../images/warehouse/components.jpg"
+                  alt="Arduino Mega, barcode scanner, sensors and servo components used in the warehouse sorting prototype"
+                >
+
+                <figcaption>
+                  Core electronic and electromechanical components during system development.
+                </figcaption>
+              </figure>
+
+              <figure class="project-photo-card">
+                <img
+                  src="../images/warehouse/barcode-scanner.jpg"
+                  alt="GM65 barcode scanner module used for package identification"
+                >
+
+                <figcaption>
+                  GM65 barcode scanner used for package identification.
+                </figcaption>
+              </figure>
+
+              <figure class="project-photo-card">
+                <img
+                  src="../images/warehouse/buck-converter.jpg"
+                  alt="Adjustable DC-DC converter used during prototype power distribution"
+                >
+
+                <figcaption>
+                  Adjustable DC-DC conversion used to supply components at suitable voltage levels.
+                </figcaption>
+              </figure>
+
+            </div>
+          
+          </section>
+
+          <!-- Challenges -->
+          <section
+            class="project-section"
+            id="challenges"
+          >
+
+            <p class="project-section-label">
+              05 • CHALLENGES
+            </p>
+
+            <h2>
+              What caused the most trouble.
+            </h2>
+
+            <div class="challenge-list">
+
+              <article class="challenge-card">
+                <h3>Mechanical mounting and alignment</h3>
+
+                <p>
+                  Sensors and servo mechanisms had to remain correctly
+                  positioned relative to the conveyor. Temporary mounting
+                  methods were useful during development but introduced
+                  alignment and reliability problems.
+                </p>
+              </article>
+
+              <article class="challenge-card">
+                <h3>Integrating multiple subsystems</h3>
+
+                <p>
+                  The project required the barcode scanner, sensors,
+                  conveyor, controller, and servo mechanisms to operate
+                  in the correct sequence rather than simply working
+                  independently.
+                </p>
+              </article>
+
+              <article class="challenge-card">
+                <h3>Prototype reliability</h3>
+
+                <p>
+                  Moving and reassembling the prototype affected sensor
+                  positioning and mechanical calibration, highlighting
+                  how strongly physical reliability depends on proper
+                  mechanical support and repeatable mounting.
+                </p>
+              </article>
+
+            </div>
+
+          </section>
+
+          <!-- Results -->
+          <section
+            class="project-section"
+            id="results"
+          >
+
+            <p class="project-section-label">
+              06 • RESULTS
+            </p>
+
+            <h2>
+              What the prototype demonstrated.
+            </h2>
+
+            <div class="project-highlight">
+
+              <h3>
+                A working multi-domain engineering prototype
+              </h3>
+
+              <p>
+                The project demonstrated the complete concept of
+                identifying packages, processing the information,
+                making an automated sorting decision, and physically
+                routing items using electromechanical actuators.
+              </p>
+
+            </div>
+
+          </section>
+
+          <!-- Lessons -->
+          <section
+            class="project-section"
+            id="lessons"
+          >
+
+            <p class="project-section-label">
+              07 • WHAT I LEARNED
+            </p>
+
+            <h2>
+              More than just writing Arduino code.
+            </h2>
+
+            <p>
+              The project reinforced that successful automation depends
+              on the interaction between mechanical construction,
+              electrical systems, control logic, sensors, and software.
+              A component can work perfectly by itself and still fail
+              when integrated poorly into the overall system.
+            </p>
+
+            <p>
+              It also gave me practical experience with iterative
+              troubleshooting: identifying whether a problem originated
+              from software logic, wiring, power supply, sensing, or
+              mechanical alignment instead of assuming every failure
+              was a programming issue.
+            </p>
+
+          </section>
+
+          <!-- Improvements -->
+          <section
+            class="project-section"
+            id="improvements"
+          >
+
+            <p class="project-section-label">
+              08 • FUTURE IMPROVEMENTS
+            </p>
+
+            <h2>
+              What I would improve next.
+            </h2>
+
+            <figure class="project-feature-photo">
+              <img
+                src="../images/warehouse/printing-mounts.jpg"
+                alt="3D printing structural mounting parts for the warehouse sorting system"
+              >
+
+              <figcaption>
+                Developing rigid 3D-printed mounting parts to improve component alignment
+                and repeatability compared with temporary prototype mounting.
+              </figcaption>
+            </figure>
+
+
+            <div class="technical-grid">
+
+              <article class="technical-card">
+                <i class="fa-solid fa-cubes-stacked"></i>
+
+                <h3>Rigid component mounts</h3>
+
+                <p>
+                  Replace temporary mounting with properly designed
+                  3D-printed brackets for sensors and servo assemblies.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h3>Improved calibration</h3>
+
+                <p>
+                  Introduce a repeatable calibration procedure for
+                  sensor positions and sorting gate movement.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Sorting data logging</h3>
+
+                <p>
+                  Record barcode events and sorting results for
+                  monitoring, debugging, and warehouse statistics.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>Network connectivity</h3>
+
+                <p>
+                  Connect the prototype to a higher-level inventory or
+                  warehouse management system.
+                </p>
+              </article>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+
+          <div class="sidebar-card">
+
+            <h3>On this page</h3>
+
+            <nav class="sidebar-list">
+              <a href="#overview">Overview</a>
+              <a href="#objective">Objective</a>
+              <a href="#workflow">System Workflow</a>
+              <a href="#implementation">Implementation</a>
+              <a href="#challenges">Challenges</a>
+              <a href="#results">Results</a>
+              <a href="#lessons">What I Learned</a>
+              <a href="#improvements">Future Improvements</a>
+            </nav>
+
+          </div>
+
+          <div class="sidebar-card">
+
+            <h3>Technology</h3>
+
+            <div class="project-tech-list">
+              <span>Arduino Mega</span>
+              <span>GM65 Scanner</span>
+              <span>IR Sensors</span>
+              <span>Ultrasonic</span>
+              <span>MG996 Servo</span>
+              <span>Embedded C/C++</span>
+              <span>Electronics</span>
+              <span>Prototyping</span>
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="project-page-footer">
+
+    <div class="container project-page-footer-content">
+
+      <p>
+        © <span id="projectCurrentYear"></span> Nyan Win Phyo.
+      </p>
+
+      <a
+        href="../index.html#projects"
+        class="project-back-link"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Projects
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script src="../project-script.js"></script>
+
+</body>
+</html>
