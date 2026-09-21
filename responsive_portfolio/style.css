@@ -1457,12 +1457,16 @@ img {
 
   .additional-work-list {
     flex: none;
-    min-height: auto;
 
-    overflow-y: visible;
+    min-height: 0;
+    max-height: none;
+
+    overflow: visible;
 
     margin: 16px 0 20px;
     padding-right: 0;
+
+    scrollbar-gutter: auto;
   }
 
   .profile-image {
@@ -1528,5 +1532,38 @@ img {
 
   .timeline-content {
     padding: 20px;
+  }
+}
+
+/* =========================================
+   PHONE LANDSCAPE PROJECT CARD FIX
+========================================= */
+
+@media (orientation: landscape) and (max-height: 600px) {
+
+  .project-card {
+    height: auto !important;
+    min-height: 0;
+  }
+
+  .project-content {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .project-content > p {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .project-tags {
+    flex-shrink: 0;
+  }
+
+  .project-status,
+  .project-footer,
+  .project-links {
+    flex-shrink: 0;
   }
 }

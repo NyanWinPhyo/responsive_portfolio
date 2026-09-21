@@ -1039,3 +1039,158 @@ body.lightbox-open {
     height: 40px;
   }
 }
+
+/* =========================================
+   CONTROL SYSTEMS - RESPONSE GRAPH PAIR
+========================================= */
+
+.control-response-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.control-response-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--background);
+}
+
+.control-response-card a {
+  display: block;
+  width: 100%;
+  background: #111;
+}
+
+.control-response-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #111;
+}
+
+.control-response-card figcaption {
+  padding: 16px 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .control-response-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   CONTROL SYSTEMS - MATLAB CODE
+========================================= */
+
+.control-code-stack {
+  display: grid;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.control-code-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #111827;
+  box-shadow: var(--shadow-soft);
+}
+
+.control-code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 13px 18px;
+
+  background: #1f2937;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.control-code-header > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.control-code-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.control-code-card pre {
+  margin: 0;
+  padding: 22px;
+
+  overflow-x: auto;
+
+  background: #111827;
+
+  font-family:
+    "Cascadia Code",
+    "Consolas",
+    "Courier New",
+    monospace;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  tab-size: 4;
+}
+
+.control-code-card code {
+  color: #e5e7eb;
+  font-family: inherit;
+  white-space: pre;
+}
+
+/* Scrollbar inside code blocks */
+.control-code-card pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.control-code-card pre::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+.control-code-card pre::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 999px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .control-code-header {
+    padding: 12px 14px;
+    font-size: 0.75rem;
+  }
+
+  .control-code-card pre {
+    padding: 16px;
+    font-size: 0.78rem;
+    line-height: 1.65;
+  }
+
+}

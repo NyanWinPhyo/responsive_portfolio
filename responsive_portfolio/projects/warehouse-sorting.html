@@ -416,36 +416,59 @@
             <div class="project-photo-grid">
 
               <figure class="project-photo-card">
-                <img
-                  src="../images/warehouse/components.jpg"
-                  alt="Arduino Mega, barcode scanner, sensors and servo components used in the warehouse sorting prototype"
+
+                <a
+                  href="../images/warehouse/components.jpg"
+                  class="project-lightbox-trigger"
                 >
+                  <img
+                    src="../images/warehouse/components.jpg"
+                    alt="Arduino Mega, barcode scanner, sensors and servo components used in the warehouse sorting prototype"
+                  >
+                </a>
 
                 <figcaption>
                   Core electronic and electromechanical components during system development.
                 </figcaption>
+
               </figure>
 
+
               <figure class="project-photo-card">
-                <img
-                  src="../images/warehouse/barcode-scanner.jpg"
-                  alt="GM65 barcode scanner module used for package identification"
+
+                <a
+                  href="../images/warehouse/barcode-scanner.jpg"
+                  class="project-lightbox-trigger"
                 >
+                  <img
+                    src="../images/warehouse/barcode-scanner.jpg"
+                    alt="GM65 barcode scanner module used for package identification"
+                  >
+                </a>
 
                 <figcaption>
                   GM65 barcode scanner used for package identification.
                 </figcaption>
+
               </figure>
 
+
               <figure class="project-photo-card">
-                <img
-                  src="../images/warehouse/buck-converter.jpg"
-                  alt="Adjustable DC-DC converter used during prototype power distribution"
+
+                <a
+                  href="../images/warehouse/buck-converter.jpg"
+                  class="project-lightbox-trigger"
                 >
+                  <img
+                    src="../images/warehouse/buck-converter.jpg"
+                    alt="Adjustable DC-DC converter used during prototype power distribution"
+                  >
+                </a>
 
                 <figcaption>
                   Adjustable DC-DC conversion used to supply components at suitable voltage levels.
                 </figcaption>
+
               </figure>
 
             </div>
@@ -583,15 +606,22 @@
             </h2>
 
             <figure class="project-feature-photo">
-              <img
-                src="../images/warehouse/printing-mounts.jpg"
-                alt="3D printing structural mounting parts for the warehouse sorting system"
+
+              <a
+                href="../images/warehouse/printing-mounts.jpg"
+                class="project-lightbox-trigger"
               >
+                <img
+                  src="../images/warehouse/printing-mounts.jpg"
+                  alt="3D printing structural mounting parts for the warehouse sorting system"
+                >
+              </a>
 
               <figcaption>
                 Developing rigid 3D-printed mounting parts to improve component alignment
                 and repeatability compared with temporary prototype mounting.
               </figcaption>
+
             </figure>
 
 
@@ -711,6 +741,47 @@
     </div>
 
   </footer>
+
+  <!-- =========================
+      IMAGE LIGHTBOX
+  ========================== -->
+
+  <div
+    class="project-lightbox"
+    id="projectLightbox"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Image preview"
+  >
+
+    <div class="project-lightbox-backdrop"></div>
+
+    <div class="project-lightbox-content">
+
+      <button
+        class="project-lightbox-close"
+        id="projectLightboxClose"
+        type="button"
+        aria-label="Close image preview"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <img
+        id="projectLightboxImage"
+        src=""
+        alt=""
+      >
+
+      <p
+        class="project-lightbox-caption"
+        id="projectLightboxCaption"
+      ></p>
+
+    </div>
+
+  </div>
 
   <script src="../project-script.js"></script>
 

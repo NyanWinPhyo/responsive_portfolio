@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Aircraft Flight Path Control System Analysis project by Nyan Win Phyo."
+  >
+
+  <title>
+    Aircraft Flight Path Control System | Nyan Win Phyo
+  </title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../project-style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+</head>
+
+
+<body class="project-page">
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="project-header">
+
+    <nav class="project-navbar container">
+
+      <a href="../index.html" class="logo">
+        NWP<span>.</span>
+      </a>
+
+      <div class="project-nav-actions">
+
+        <a
+          href="../index.html#projects"
+          class="project-back-link"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Projects</span>
+        </a>
+
+        <button
+          class="theme-button"
+          id="projectThemeButton"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="project-hero">
+
+      <div class="container">
+
+        <div class="project-breadcrumb">
+
+          <a href="../index.html">
+            Portfolio
+          </a>
+
+          <i class="fa-solid fa-chevron-right"></i>
+
+          <a href="../index.html#projects">
+            Projects
+          </a>
+
+          <i class="fa-solid fa-chevron-right"></i>
+
+          <span>
+            Aircraft Flight Path Control
+          </span>
+
+        </div>
+
+
+        <div class="project-hero-grid">
+
+          <div>
+
+            <p class="project-eyebrow">
+              CONTROL SYSTEMS • MATLAB • FEEDBACK ANALYSIS
+            </p>
+
+            <h1>
+              Aircraft Flight Path Control System
+            </h1>
+
+            <p class="project-lead">
+              A MATLAB-based control systems project modelling an aircraft
+              flight path using autopilot control, actuator dynamics,
+              aircraft process behaviour, and GPS measurement feedback.
+              The system was analysed using step, ramp, and parabolic
+              inputs together with a comparison between closed-loop and
+              open-loop operation.
+            </p>
+
+
+            <div class="project-actions">
+
+              <a
+                href="#overview"
+                class="button primary-button"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+
+              <a
+                href="../index.html#contact"
+                class="button secondary-button"
+              >
+                Contact Me
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-hero-visual project-photo-hero">
+
+            <img
+              src="../images/control-systems/step-response.png"
+              alt="MATLAB step response of the aircraft flight path control system"
+            >
+
+            <span class="project-hero-badge">
+              Academic Control Systems Project
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-meta">
+
+          <div class="project-meta-card">
+
+            <span>
+              Status
+            </span>
+
+            <strong>
+              Completed
+            </strong>
+
+          </div>
+
+
+          <div class="project-meta-card">
+
+            <span>
+              Project Type
+            </span>
+
+            <strong>
+              Academic Assignment
+            </strong>
+
+          </div>
+
+
+          <div class="project-meta-card">
+
+            <span>
+              Focus
+            </span>
+
+            <strong>
+              Modelling & Analysis
+            </strong>
+
+          </div>
+
+
+          <div class="project-meta-card">
+
+            <span>
+              Platform
+            </span>
+
+            <strong>
+              MATLAB
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <section class="project-body">
+
+      <div class="container project-layout">
+
+
+        <!-- =========================
+             LEFT / MAIN COLUMN
+        ========================== -->
+
+        <div class="project-main">
+
+
+          <!-- =========================
+               01 - OVERVIEW
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="overview"
+          >
+
+            <p class="project-section-label">
+              01 • OVERVIEW
+            </p>
+
+            <h2>
+              Modelling an aircraft flight path as a feedback system.
+            </h2>
+
+            <p>
+              This project investigated an aircraft flight path control
+              system using classical control-system modelling and MATLAB
+              simulation.
+            </p>
+
+            <p>
+              The system was represented as a closed-loop structure in
+              which the desired flight path is compared with the measured
+              flight path. The resulting error is processed by an
+              autopilot controller, which commands the aircraft actuators
+              before the GPS measurement system feeds the resulting flight
+              path back into the control loop.
+            </p>
+
+            <p>
+              The model was then tested using different reference inputs
+              to study tracking performance, stability, overshoot,
+              oscillation, and settling behaviour.
+            </p>
+
+          </section>
+
+
+          <!-- =========================
+               02 - SYSTEM MODEL
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="model"
+          >
+
+            <p class="project-section-label">
+              02 • SYSTEM MODEL
+            </p>
+
+            <h2>
+              From desired path to measured flight path.
+            </h2>
+
+            <p>
+              The control system consists of four main elements:
+              an autopilot controller, aircraft actuators, the aircraft
+              itself as the controlled process, and a GPS measurement
+              system.
+            </p>
+
+            <p>
+              The measured flight path is returned to the summing point
+              as feedback. The difference between the commanded and
+              measured paths produces the error signal used by the
+              controller.
+            </p>
+
+
+            <figure class="project-feature-photo">
+
+              <a
+                href="../images/control-systems/aircraft-block-diagram.png"
+                class="project-lightbox-trigger"
+              >
+
+                <img
+                  src="../images/control-systems/aircraft-block-diagram.png"
+                  alt="Block diagram of an aircraft flight path control system with GPS feedback"
+                >
+
+              </a>
+
+              <figcaption>
+                Closed-loop aircraft flight path model consisting of the
+                autopilot controller, aircraft actuators, aircraft process,
+                and GPS measurement feedback.
+              </figcaption>
+
+            </figure>
+
+
+            <div class="technical-grid">
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-computer"></i>
+
+                <h3>
+                  Autopilot Controller
+                </h3>
+
+                <p>
+                  Receives the flight-path error and produces the command
+                  required to correct the aircraft trajectory.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-gears"></i>
+
+                <h3>
+                  Actuators
+                </h3>
+
+                <p>
+                  Represent the ailerons, elevators, rudder, and engine
+                  power used to change the aircraft flight path.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-plane"></i>
+
+                <h3>
+                  Aircraft Process
+                </h3>
+
+                <p>
+                  Represents the aircraft dynamics affected by the
+                  controller and actuator commands.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-satellite"></i>
+
+                <h3>
+                  GPS Measurement
+                </h3>
+
+                <p>
+                  Measures the resulting flight path and returns it to
+                  the feedback loop so tracking error can be corrected.
+                </p>
+
+              </article>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               03 - MATHEMATICAL MODEL
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="mathematical-model"
+          >
+
+            <p class="project-section-label">
+              03 • MATHEMATICAL MODEL
+            </p>
+
+            <h2>
+              Representing the system with transfer functions.
+            </h2>
+
+            <p>
+              The aircraft control system was represented using a
+              closed-loop transfer function containing controller,
+              actuator, aircraft-process, and GPS feedback gains.
+            </p>
+
+            <p>
+              Time constants were also included to represent the dynamic
+              behaviour of the actuator, aircraft process, and GPS
+              measurement system.
+            </p>
+
+
+            <div class="project-highlight">
+
+              <h3>
+                Simulation parameters
+              </h3>
+
+              <p>
+                Normalized engineering values were used because specific
+                aircraft parameters were not supplied for the assignment.
+                The selected values allowed the dynamic behaviour of the
+                system to be demonstrated while maintaining a stable
+                closed-loop response.
+              </p>
+
+            </div>
+
+
+            <div class="technical-grid">
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-sliders"></i>
+
+                <h3>
+                  Controller Gain
+                </h3>
+
+                <p>
+                  Kc = 1
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-gears"></i>
+
+                <h3>
+                  Actuator Gain
+                </h3>
+
+                <p>
+                  Ka = 1
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-plane"></i>
+
+                <h3>
+                  Process Gain
+                </h3>
+
+                <p>
+                  Kp = 1
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-satellite-dish"></i>
+
+                <h3>
+                  GPS Feedback Gain
+                </h3>
+
+                <p>
+                  Kh = 1
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-stopwatch"></i>
+
+                <h3>
+                  Actuator Time Constant
+                </h3>
+
+                <p>
+                  Ta = 0.5 s
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+                  Aircraft Time Constant
+                </h3>
+
+                <p>
+                  Tp = 2 s
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+
+                <h3>
+                  GPS Time Constant
+                </h3>
+
+                <p>
+                  Th = 0.1 s
+                </p>
+
+              </article>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               04 - MATLAB IMPLEMENTATION
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="implementation"
+          >
+
+            <p class="project-section-label">
+              04 • MATLAB IMPLEMENTATION
+            </p>
+
+            <h2>
+              Turning the mathematical model into a simulation.
+            </h2>
+
+            <p>
+              The model was implemented in MATLAB using transfer-function
+              representation. The script defined the simulation
+              parameters, created the closed-loop system, generated the
+              step response, and calculated response characteristics.
+            </p>
+
+            <p>
+              Additional simulations were then performed using step,
+              ramp, and parabolic input signals. An open-loop version of
+              the system was also created by removing the GPS feedback
+              path so that the two behaviours could be compared.
+            </p>
+
+
+            <div class="control-code-stack">
+
+              <!-- SYSTEM MODEL -->
+              <div class="control-code-card">
+
+                <div class="control-code-header">
+                  <div>
+                    <span class="control-code-dot"></span>
+                    <span>aircraft_control.m</span>
+                  </div>
+
+                  <span>System Model</span>
+                </div>
+
+                <pre><code>clc;
+            clear;
+            close all;
+
+            % Aircraft Flight Path Control System
+            % Simulation Parameters
+
+            Kc = 1;      % Controller gain
+            Ka = 1;      % Actuator gain
+            Kp = 1;      % Aircraft/process gain
+            Kh = 1;      % GPS feedback gain
+
+            Ta = 0.5;    % Actuator time constant
+            Tp = 2;      % Aircraft/process time constant
+            Th = 0.1;    % GPS measurement time constant
+
+            % Define Laplace variable
+            s = tf('s');
+
+            % Closed-loop transfer function with GPS feedback
+            sys_closed = (Kc*Ka*Kp*(Th*s + 1)) / ...
+                (s*(Ta*s + 1)*(Tp*s + 1)*(Th*s + 1) ...
+                + Kc*Ka*Kp*Kh);
+
+            % Display transfer function
+            disp('Closed-loop Transfer Function with GPS Feedback:')
+            sys_closed
+
+            % Step response
+            figure;
+            step(sys_closed);
+            grid on;
+            title('Step Response of Aircraft Flight Path Control System');
+            xlabel('Time (s)');
+            ylabel('Flight Path Response');
+
+            % Step response performance values
+            info = stepinfo(sys_closed);
+            disp('Step Response Information:')
+            disp(info)</code></pre>
+
+              </div>
+
+
+              <!-- INPUT SIMULATIONS -->
+              <div class="control-code-card">
+
+                <div class="control-code-header">
+                  <div>
+                    <span class="control-code-dot"></span>
+                    <span>aircraft_control.m</span>
+                  </div>
+
+                  <span>Input Simulations</span>
+                </div>
+
+                <pre><code>% Time vector
+            t = 0:0.01:30;
+
+            % Input signals
+            step_input = ones(size(t));
+            ramp_input = t;
+            parabolic_input = 0.5*t.^2;
+
+            % Response to step input
+            figure;
+            lsim(sys_closed, step_input, t);
+            grid on;
+            title('Response to Step Input');
+            xlabel('Time (s)');
+            ylabel('Flight Path Response');
+
+            % Response to ramp input
+            figure;
+            lsim(sys_closed, ramp_input, t);
+            grid on;
+            title('Response to Ramp Input');
+            xlabel('Time (s)');
+            ylabel('Flight Path Response');</code></pre>
+
+              </div>
+
+
+              <!-- FEEDBACK COMPARISON -->
+              <div class="control-code-card">
+
+                <div class="control-code-header">
+                  <div>
+                    <span class="control-code-dot"></span>
+                    <span>aircraft_control.m</span>
+                  </div>
+
+                  <span>Feedback Comparison</span>
+                </div>
+
+                <pre><code>% Response to parabolic input
+            figure;
+            lsim(sys_closed, parabolic_input, t);
+            grid on;
+            title('Response to Parabolic Input');
+            xlabel('Time (s)');
+            ylabel('Flight Path Response');
+
+            % Open-loop system when GPS feedback is removed
+            sys_open = (Kc*Ka*Kp) / ...
+                (s*(Ta*s + 1)*(Tp*s + 1));
+
+            % Compare with and without GPS feedback
+            figure;
+            step(sys_closed, sys_open);
+            grid on;
+            legend('With GPS Feedback', 'Without GPS Feedback');
+            title('Step Response With and Without GPS Feedback');
+            xlabel('Time (s)');
+            ylabel('Flight Path Response');
+
+            % Open-loop response information
+            disp('Open-loop Transfer Function without GPS Feedback:')
+            sys_open</code></pre>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               05 - STEP RESPONSE
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="step-response"
+          >
+
+            <p class="project-section-label">
+              05 • STEP RESPONSE
+            </p>
+
+            <h2>
+              Analysing the transient response.
+            </h2>
+
+            <p>
+              The closed-loop step response exhibits underdamped
+              behaviour. The output initially overshoots the desired
+              value and oscillates before gradually converging toward
+              steady state.
+            </p>
+
+
+            <figure class="project-feature-photo">
+
+              <a
+                href="../images/control-systems/step-response.png"
+                class="project-lightbox-trigger"
+              >
+
+                <img
+                  src="../images/control-systems/step-response.png"
+                  alt="Step response of the aircraft flight path control system"
+                >
+
+              </a>
+
+              <figcaption>
+                Closed-loop step response showing overshoot and
+                gradually decaying oscillation before settling.
+              </figcaption>
+
+            </figure>
+
+
+            <div class="technical-grid">
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                <h3>
+                  Rise Time
+                </h3>
+
+                <p>
+                  1.89 s
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-mountain"></i>
+
+                <h3>
+                  Peak Time
+                </h3>
+
+                <p>
+                  5.46 s
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-wave-square"></i>
+
+                <h3>
+                  Overshoot
+                </h3>
+
+                <p>
+                  58.40%
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-hourglass-end"></i>
+
+                <h3>
+                  Settling Time
+                </h3>
+
+                <p>
+                  35.64 s
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+                  Peak Value
+                </h3>
+
+                <p>
+                  1.584
+                </p>
+
+              </article>
+
+            </div>
+
+
+            <p>
+              Although the response remains stable and eventually reaches
+              the desired steady-state value, the relatively high
+              overshoot indicates that controller tuning could improve
+              the transient response.
+            </p>
+
+          </section>
+
+
+          <!-- =========================
+               06 - INPUT RESPONSE ANALYSIS
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="responses"
+          >
+
+            <p class="project-section-label">
+              06 • INPUT RESPONSE ANALYSIS
+            </p>
+
+            <h2>
+              Testing different flight-path commands.
+            </h2>
+
+
+            <div class="challenge-list">
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Step Input
+                </h3>
+
+                <p>
+                  A step input represents a sudden change in the desired
+                  flight path. The system responds rapidly but exhibits
+                  noticeable overshoot and oscillation before approaching
+                  the commanded value.
+                </p>
+
+              </article>
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Ramp Input
+                </h3>
+
+                <p>
+                  The ramp signal represents a continuously increasing
+                  command such as a steady climb or descent. The output
+                  follows the reference trend with a small tracking error
+                  caused by the actuator and aircraft dynamics.
+                </p>
+
+              </article>
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Parabolic Input
+                </h3>
+
+                <p>
+                  The parabolic signal changes at an increasing rate and
+                  is more difficult for the model to track. The output
+                  follows the overall trajectory but the tracking error
+                  becomes larger as time increases.
+                </p>
+
+              </article>
+
+
+            </div>
+
+
+            <figure class="project-feature-photo">
+
+              <a
+                href="../images/control-systems/step-input-response.png"
+                class="project-lightbox-trigger"
+              >
+
+                <img
+                  src="../images/control-systems/step-input-response.png"
+                  alt="Aircraft flight path response to a step input"
+                >
+
+              </a>
+
+              <figcaption>
+                Response to a sudden step command showing an underdamped
+                transient response.
+              </figcaption>
+
+            </figure>
+
+
+            <div class="control-response-grid">
+
+              <figure class="control-response-card">
+
+                <a
+                  href="../images/control-systems/ramp-response.png"
+                  class="project-lightbox-trigger"
+                >
+                  <img
+                    src="../images/control-systems/ramp-response.png"
+                    alt="Aircraft flight path control system response to a ramp input"
+                  >
+                </a>
+
+                <figcaption>
+                  Ramp response showing the output following a steadily
+                  increasing reference with a small tracking error.
+                </figcaption>
+
+              </figure>
+
+
+              <figure class="control-response-card">
+
+                <a
+                  href="../images/control-systems/parabolic-response.png"
+                  class="project-lightbox-trigger"
+                >
+                  <img
+                    src="../images/control-systems/parabolic-response.png"
+                    alt="Aircraft flight path control system response to a parabolic input"
+                  >
+                </a>
+
+                <figcaption>
+                  Parabolic response demonstrating increased tracking
+                  difficulty as the reference changes more rapidly.
+                </figcaption>
+
+              </figure>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               07 - GPS FEEDBACK
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="feedback"
+          >
+
+            <p class="project-section-label">
+              07 • GPS FEEDBACK ANALYSIS
+            </p>
+
+            <h2>
+              What changes when the feedback loop is removed?
+            </h2>
+
+            <p>
+              The final comparison investigated the role of GPS feedback
+              by comparing the closed-loop model against an open-loop
+              version of the aircraft system.
+            </p>
+
+            <p>
+              With feedback present, the controller can continuously
+              compare measured and desired flight paths and reduce the
+              resulting tracking error.
+            </p>
+
+            <p>
+              When the GPS feedback loop is removed, the model no longer
+              automatically corrects deviations. The simulated open-loop
+              response continues increasing instead of converging toward
+              the desired trajectory.
+            </p>
+
+
+            <figure class="project-feature-photo">
+
+              <a
+                href="../images/control-systems/gps-feedback-comparison.png"
+                class="project-lightbox-trigger"
+              >
+
+                <img
+                  src="../images/control-systems/gps-feedback-comparison.png"
+                  alt="Comparison between closed-loop aircraft flight path control with GPS feedback and open-loop control without GPS feedback"
+                >
+
+              </a>
+
+              <figcaption>
+                Comparison between the closed-loop model with GPS
+                feedback and the open-loop model after the feedback
+                path was removed.
+              </figcaption>
+
+            </figure>
+
+          </section>
+
+
+          <!-- =========================
+               08 - RESULTS
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="results"
+          >
+
+            <p class="project-section-label">
+              08 • RESULTS
+            </p>
+
+            <h2>
+              What the simulations demonstrated.
+            </h2>
+
+
+            <div class="project-highlight">
+
+              <h3>
+                Feedback provides correction and regulation
+              </h3>
+
+              <p>
+                The simulations demonstrated that the closed-loop model
+                could follow step, ramp, and parabolic inputs while
+                remaining stable.
+              </p>
+
+              <p>
+                The comparison with the open-loop system also showed why
+                feedback is important: without GPS measurement feedback,
+                the simulated system lost the ability to regulate its
+                response and correct tracking deviations.
+              </p>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               09 - CHALLENGES / ANALYSIS
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="challenges"
+          >
+
+            <p class="project-section-label">
+              09 • ANALYSIS CHALLENGES
+            </p>
+
+            <h2>
+              Interpreting more than whether the graph “works.”
+            </h2>
+
+
+            <div class="challenge-list">
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Connecting equations to physical behaviour
+                </h3>
+
+                <p>
+                  The transfer function represents several physical
+                  parts of the aircraft control loop. Understanding the
+                  model required connecting mathematical terms and time
+                  constants to the controller, actuators, aircraft
+                  dynamics, and GPS measurement system.
+                </p>
+
+              </article>
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Interpreting transient behaviour
+                </h3>
+
+                <p>
+                  The step response had to be analysed in terms of rise
+                  time, peak time, overshoot, settling time, and
+                  oscillation rather than judging the plot visually
+                  alone.
+                </p>
+
+              </article>
+
+
+              <article class="challenge-card">
+
+                <h3>
+                  Comparing different reference inputs
+                </h3>
+
+                <p>
+                  Step, ramp, and parabolic inputs place different
+                  demands on the control system. Comparing them helped
+                  show how tracking performance changes as the reference
+                  becomes more difficult to follow.
+                </p>
+
+              </article>
+
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               10 - WHAT I LEARNED
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="lessons"
+          >
+
+            <p class="project-section-label">
+              10 • WHAT I LEARNED
+            </p>
+
+            <h2>
+              Turning control theory into something visible.
+            </h2>
+
+            <p>
+              This project helped connect mathematical control-system
+              concepts with simulated engineering behaviour.
+            </p>
+
+            <p>
+              Instead of working only with transfer-function equations,
+              MATLAB made it possible to observe how system parameters
+              affect overshoot, oscillation, settling behaviour, and
+              tracking error.
+            </p>
+
+            <p>
+              It also reinforced the role of feedback in closed-loop
+              control: measurement is not simply used for monitoring,
+              but becomes part of the mechanism that allows the system
+              to detect and correct deviations.
+            </p>
+
+          </section>
+
+
+          <!-- =========================
+               11 - FUTURE IMPROVEMENTS
+          ========================== -->
+
+          <section
+            class="project-section"
+            id="improvements"
+          >
+
+            <p class="project-section-label">
+              11 • FUTURE IMPROVEMENTS
+            </p>
+
+            <h2>
+              Reducing the large transient overshoot.
+            </h2>
+
+
+            <div class="technical-grid">
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-sliders"></i>
+
+                <h3>
+                  Controller gain tuning
+                </h3>
+
+                <p>
+                  Adjust the controller parameters to reduce overshoot
+                  and improve settling behaviour while maintaining
+                  system stability.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+                  PID control
+                </h3>
+
+                <p>
+                  Explore PID control as a more advanced strategy for
+                  improving transient response and flight-path tracking.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-plane-up"></i>
+
+                <h3>
+                  More realistic aircraft parameters
+                </h3>
+
+                <p>
+                  Replace the normalized demonstration parameters with
+                  values based on a defined aircraft model for more
+                  realistic simulation behaviour.
+                </p>
+
+              </article>
+
+
+              <article class="technical-card">
+
+                <i class="fa-solid fa-wave-square"></i>
+
+                <h3>
+                  Extended response analysis
+                </h3>
+
+                <p>
+                  Compare additional tuning configurations and quantify
+                  how parameter changes affect stability, tracking error,
+                  overshoot, and settling time.
+                </p>
+
+              </article>
+
+
+            </div>
+
+          </section>
+
+
+        </div>
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="project-sidebar">
+
+
+          <div class="sidebar-card">
+
+            <h3>
+              On this page
+            </h3>
+
+            <nav class="sidebar-list">
+
+              <a href="#overview">
+                Overview
+              </a>
+
+              <a href="#model">
+                System Model
+              </a>
+
+              <a href="#mathematical-model">
+                Mathematical Model
+              </a>
+
+              <a href="#implementation">
+                MATLAB Implementation
+              </a>
+
+              <a href="#step-response">
+                Step Response
+              </a>
+
+              <a href="#responses">
+                Input Responses
+              </a>
+
+              <a href="#feedback">
+                GPS Feedback
+              </a>
+
+              <a href="#results">
+                Results
+              </a>
+
+              <a href="#challenges">
+                Analysis Challenges
+              </a>
+
+              <a href="#lessons">
+                What I Learned
+              </a>
+
+              <a href="#improvements">
+                Future Improvements
+              </a>
+
+            </nav>
+
+          </div>
+
+
+          <div class="sidebar-card">
+
+            <h3>
+              Technology
+            </h3>
+
+            <div class="project-tech-list">
+
+              <span>MATLAB</span>
+              <span>Control Systems</span>
+              <span>Transfer Functions</span>
+              <span>Feedback Control</span>
+              <span>Step Response</span>
+              <span>System Modelling</span>
+              <span>Response Analysis</span>
+              <span>GPS Feedback</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="sidebar-card">
+
+            <h3>
+              Step Response
+            </h3>
+
+            <div class="project-tech-list">
+
+              <span>Rise: 1.89 s</span>
+              <span>Peak: 5.46 s</span>
+              <span>Settling: 35.64 s</span>
+              <span>Overshoot: 58.40%</span>
+              <span>Peak Value: 1.584</span>
+
+            </div>
+
+          </div>
+
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="project-page-footer">
+
+    <div class="container project-page-footer-content">
+
+      <p>
+        © <span id="projectCurrentYear"></span> Nyan Win Phyo.
+      </p>
+
+      <a
+        href="../index.html#projects"
+        class="project-back-link"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Projects
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       IMAGE LIGHTBOX
+  ========================== -->
+
+  <div
+    class="project-lightbox"
+    id="projectLightbox"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Image preview"
+  >
+
+    <div class="project-lightbox-backdrop"></div>
+
+    <div class="project-lightbox-content">
+
+      <button
+        class="project-lightbox-close"
+        id="projectLightboxClose"
+        type="button"
+        aria-label="Close image preview"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <img
+        id="projectLightboxImage"
+        src=""
+        alt=""
+      >
+
+      <p
+        class="project-lightbox-caption"
+        id="projectLightboxCaption"
+      ></p>
+
+    </div>
+
+  </div>
+
+
+  <script src="../project-script.js"></script>
+
+</body>
+
+</html>
