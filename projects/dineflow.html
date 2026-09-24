@@ -89,9 +89,10 @@
 
             <p class="project-lead">
               An evolving full-stack restaurant management platform built
-              with ASP.NET Core MVC, C#, and SQL Server, designed around
-              role-based restaurant operations, administration, customer
-              workflows, and database-backed business processes.
+              with ASP.NET Core MVC, C#, and SQL Server, connecting role-based
+              administration, customer ordering, kitchen operations, menu
+              management, ingredient inventory, stock tracking, sales reporting,
+              and customer feedback through shared business workflows.
             </p>
 
             <div class="project-actions">
@@ -248,8 +249,9 @@
             <p>
               The goal is to create a restaurant management system where
               administrative tasks, restaurant operations, user accounts,
-              menu data, orders, feedback, and future inventory workflows
-              can operate together as parts of one application.
+              menu data, orders, feedback, ingredient inventory, stock
+              movements, and reporting operate together as parts of one
+              application.
             </p>
 
             <p>
@@ -340,9 +342,9 @@
                 <div>
                   <h3>SQL Server database</h3>
                   <p>
-                    Persistent restaurant, user, order, and application
-                    data is stored and retrieved through a relational
-                    database.
+                    Persistent user, menu, order, inventory, stock transaction,
+                    feedback, and restaurant data is stored and retrieved
+                    through a relational database.
                   </p>
                 </div>
 
@@ -369,69 +371,68 @@
             <div class="technical-grid">
 
               <article class="technical-card">
-                <i class="fa-solid fa-users-gear"></i>
+                <i class="fa-solid fa-user-shield"></i>
 
-                <h3>User Administration</h3>
+                <h3>Multi-Role Access</h3>
 
                 <p>
-                  Administrative tools for adding, editing, deactivating,
-                  activating, and managing user accounts.
+                  Separate Admin, Manager, Chef, and Customer interfaces with
+                  role-based access control and role-specific workflows.
                 </p>
               </article>
 
               <article class="technical-card">
-                <i class="fa-solid fa-user-shield"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
 
-                <h3>Role-Based Workflows</h3>
+                <h3>Ordering & Kitchen Workflow</h3>
 
                 <p>
-                  Different restaurant roles are designed to access
-                  different parts of the system depending on their
-                  responsibilities.
+                  Customers place wallet-funded orders while kitchen staff move
+                  active orders from Pending to Preparing and Completed.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-boxes-stacked"></i>
+
+                <h3>Inventory & Recipes</h3>
+
+                <p>
+                  Menu items are linked to ingredient recipes, with stock-aware
+                  availability checks and automatic ingredient usage on completion.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <h3>Stock Operations</h3>
+
+                <p>
+                  Management can restock ingredients, record adjustments and waste,
+                  and review a traceable stock transaction history.
+                </p>
+              </article>
+
+              <article class="technical-card">
+                <i class="fa-solid fa-utensils"></i>
+
+                <h3>Menu Management</h3>
+
+                <p>
+                  Role-aware tools support menu items, categories, availability,
+                  recipes, pricing rules, and food-image management.
                 </p>
               </article>
 
               <article class="technical-card">
                 <i class="fa-solid fa-chart-line"></i>
 
-                <h3>Admin Dashboard</h3>
+                <h3>Reviews & Reporting</h3>
 
                 <p>
-                  A central administration area for accessing restaurant
-                  management information and operational tools.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-id-card"></i>
-
-                <h3>Admin Profile</h3>
-
-                <p>
-                  Profile functionality for displaying and managing
-                  administrator account information.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-database"></i>
-
-                <h3>Database-Backed Data</h3>
-
-                <p>
-                  Application information is persisted through SQL Server
-                  rather than being limited to temporary in-memory data.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-trash-can"></i>
-
-                <h3>Account Lifecycle Handling</h3>
-
-                <p>
-                  User management includes soft deletion and controlled
-                  permanent deletion where account dependencies allow it.
+                  Customer feedback, management responses, review tracking, and
+                  sales reporting are integrated into restaurant operations.
                 </p>
               </article>
 
@@ -576,7 +577,7 @@
           >
 
             <p class="project-section-label">
-              05 • TECHNOLOGY
+              06 • TECHNOLOGY
             </p>
 
             <h2>
@@ -661,7 +662,7 @@
           >
 
             <p class="project-section-label">
-              INVENTORY & RECIPE SYSTEM
+              07 • INVENTORY & RECIPE SYSTEM
             </p>
 
             <h2>
@@ -739,7 +740,7 @@
           >
 
             <p class="project-section-label">
-              06 • CHALLENGES
+              08 • CHALLENGES
             </p>
 
             <h2>
@@ -791,7 +792,7 @@
           >
 
             <p class="project-section-label">
-              07 • CURRENT STATE
+              09 • CURRENT STATE
             </p>
 
             <h2>
@@ -805,11 +806,12 @@
               </h3>
 
               <p>
-                DineFlow now serves as an ongoing software engineering
-                project where I can continue implementing larger workflows,
-                improving application structure, and experimenting with
-                features that go beyond the scope of the original academic
-                restaurant system.
+                DineFlow now operates as a multi-role restaurant platform that
+                connects customer ordering, kitchen processing, menu management,
+                inventory and recipe logic, stock movements, sales reporting,
+                and feedback. It remains an ongoing software engineering project
+                for extending those workflows and improving the application
+                structure beyond the scope of the original academic system.
               </p>
 
             </div>
@@ -861,7 +863,7 @@
           >
 
             <p class="project-section-label">
-              08 • WHAT I LEARNED
+              10 • WHAT I LEARNED
             </p>
 
             <h2>
@@ -890,7 +892,7 @@
           >
 
             <p class="project-section-label">
-              09 • PLANNED EXPANSION
+              11 • PLANNED EXPANSION
             </p>
 
             <h2>
@@ -900,69 +902,26 @@
             <div class="technical-grid">
 
               <article class="technical-card">
-                <i class="fa-solid fa-boxes-stacked"></i>
-
-                <h3>Ingredient & Inventory Tracking</h3>
-
-                <p>
-                  Link menu item availability to ingredient quantities
-                  and maintain stock movement records.
-                </p>
-              </article>
-
-              <article class="technical-card">
                 <i class="fa-solid fa-money-bill-transfer"></i>
 
                 <h3>Revenue & Cost Tracking</h3>
 
                 <p>
-                  Track operational inflow and outflow so restaurant
-                  activity can be analysed alongside sales.
+                  Extend the existing sales and stock data into operational
+                  inflow-and-outflow tracking so revenue can be analysed alongside
+                  ingredient, restocking, and waste costs.
                 </p>
               </article>
 
               <article class="technical-card">
                 <i class="fa-solid fa-calendar-check"></i>
 
-                <h3>Reservations</h3>
+                <h3>Reservations & Table Management</h3>
 
                 <p>
-                  Allow customers to submit reservation requests while
-                  restaurant staff manage tables, dates, party sizes,
-                  and reservation status.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-image"></i>
-
-                <h3>Menu Images</h3>
-
-                <p>
-                  Support food images that authorised restaurant staff
-                  can upload, change, or remove for customer ordering.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-star"></i>
-
-                <h3>Reviews & Feedback</h3>
-
-                <p>
-                  Expand customer feedback features and make relevant
-                  reviews available to restaurant staff such as chefs.
-                </p>
-              </article>
-
-              <article class="technical-card">
-                <i class="fa-solid fa-kitchen-set"></i>
-
-                <h3>Chef Menu Management</h3>
-
-                <p>
-                  Provide chef-facing tools for creating and managing
-                  menu-related restaurant data.
+                  Allow customers to submit reservation requests while restaurant
+                  staff manage tables, dates, party sizes, notes, and reservation
+                  status.
                 </p>
               </article>
 
@@ -984,12 +943,13 @@
               <a href="#objective">Objective</a>
               <a href="#architecture">Architecture</a>
               <a href="#implementation">Current Implementation</a>
+              <a href="#ordering">Ordering Workflow</a>
               <a href="#technology">Technology</a>
+              <a href="#inventory">Inventory & Recipes</a>
               <a href="#challenges">Challenges</a>
               <a href="#results">Current State</a>
               <a href="#lessons">What I Learned</a>
               <a href="#future">Planned Expansion</a>
-              <a href="#ordering">Ordering Workflow</a>
             </nav>
 
           </div>
@@ -1001,7 +961,11 @@
             <div class="project-tech-list">
               <span>ASP.NET Core MVC</span>
               <span>C#</span>
+              <span>.NET</span>
               <span>SQL Server</span>
+              <span>ADO.NET</span>
+              <span>Razor Views</span>
+              <span>Bootstrap</span>
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
